@@ -80,11 +80,11 @@
   .hero-name-roman {
     display: block;
     font-family: 'EB Garamond', Georgia, serif;
-    font-style: italic;
+    font-style: normal;
     font-size: clamp(1rem, 2.5vw, 2rem);
     font-weight: 400;
-    letter-spacing: 0.08em;
-    color: var(--gray-light);
+    letter-spacing: 0.12em;
+    color: var(--cream-dim);
     margin-top: 1rem;
     opacity: 0;
     animation: fadeUp 1.2s ease 0.7s forwards;
@@ -268,9 +268,7 @@
     cursor: default;
   }
 
-  .work-card:hover {
-    background: #0f0f0f;
-  }
+
 
   .work-card-icon {
     font-family: 'EB Garamond', serif;
@@ -334,7 +332,7 @@
     color: var(--accent);
     text-decoration: none;
     border-bottom: 1px solid rgba(201, 185, 106, 0.4);
-    padding-bottom: 2px;
+    padding: 0.6em 0 0.4em;
     transition: border-color 0.3s, color 0.3s;
   }
 
@@ -356,8 +354,6 @@
     line-height: 1.6;
     max-width: 800px;
     position: relative;
-    padding-left: 2rem;
-    border-left: 2px solid var(--accent);
   }
 
   .belief-sub {
@@ -404,7 +400,7 @@
     color: var(--gray-light);
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
+    padding: 0.6em 0.2em;
     transition: color 0.3s, border-color 0.3s;
   }
   .link-item:hover {
@@ -530,15 +526,14 @@
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <p class="hero-tag">Yoshikazu Motoki — Tokyo, 2026</p>
   <h1 class="hero-name">
     元木良和
-    <span class="hero-name-roman">Yoshikazu Motoki</span>
+    <span class="hero-name-roman" style="font-style:normal;">Yoshikazu Motoki</span>
   </h1>
   <p class="hero-caption">
     自己破産、鬱、インドで仏教に目覚め、<br>
     「やめること」からはじめる自己理解コーチとして生きている。<br>
-    <em>現代社会で人間らしく生きる方法について、仏教徒として説いている。</em>
+    現代社会で人間らしく生きる方法について、仏教徒として説いている。
   </p>
   <div class="hero-scroll">scroll</div>
 </section>
@@ -669,9 +664,9 @@
     目の前の一人を、本気で変える。<br>ただ、それだけ。
   </blockquote>
   <div class="belief-sub reveal">
-    <p>仏教徒として「世のため人のために生きる」ことが、すべての活動の根底にある。鬱を克服し、自己破産から立ち直り、あるがままの自分を受け入れ、真の私に目覚めた。</p>
+    <p>仏教徒として「世のため人のために生きる」ことが、すべての活動の根底にある。鬱を克服し、自己破産から立ち直り、あるがままの自分を受け入れ、真の私に目覚め、人生の目的が利己的なものから利他的なものへと変わった。</p>
     <br>
-    <p>人にも目覚めてもらうべく、私は生かされている。</p>
+    <p>すべての人を目覚めさせるべく、私は生かされている。</p>
   </div>
 </section>
 
@@ -694,7 +689,6 @@
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Yoshikazu Motoki. All rights reserved.</p>
-  <p>Tokyo, Japan</p>
 </footer>
 
 <script>
