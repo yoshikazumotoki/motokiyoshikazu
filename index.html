@@ -18,7 +18,7 @@
     --gray-light: #888;
     --cream: #e8e4dc;
     --cream-dim: #c4bfb6;
-    --accent: #c8a96e;
+    --accent: #c9b96a;
     --white: #f5f2ed;
   }
 
@@ -308,6 +308,41 @@
     padding: 0.3em 0.8em;
   }
 
+  .work-card {
+    position: relative;
+  }
+
+  .work-card-title a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+    display: inline;
+  }
+
+  .work-card-title a:hover {
+    border-color: var(--cream);
+  }
+
+  .work-card-link {
+    display: table;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 185, 106, 0.4);
+    padding-bottom: 2px;
+    transition: border-color 0.3s, color 0.3s;
+  }
+
+  .work-card-link:hover {
+    border-color: var(--accent);
+    color: var(--cream);
+  }
+
   /* ── BELIEF ── */
   .belief-section {
     background: var(--gray-dark);
@@ -564,7 +599,7 @@
 
     <div class="timeline-item">
       <div class="timeline-year">2026 / 2月</div>
-      <div class="timeline-text">1ヶ月、北インド横断ひとり旅に。途中、仏教に目覚める。仏と一体になる感覚を覚える。</div>
+      <div class="timeline-text">1ヶ月、北インド横断の1人旅に。聖地で仏教に目覚める。改めて仏に帰依する。</div>
     </div>
 
     <div class="timeline-item">
@@ -585,30 +620,33 @@
   <div class="section-label">Works</div>
   <div class="works-grid">
 
-    <div class="work-card reveal" onclick="window.open('https://yoshikazumotoki.github.io/yameru/','_blank')" style="cursor:pointer;">
+    <div class="work-card reveal">
       <div class="work-card-icon">I.</div>
-      <div class="work-card-title"><a href="https://yoshikazumotoki.github.io/yameru/" target="_blank" style="color:inherit;text-decoration:none;">伴走型コーチング</a></div>
+      <div class="work-card-title">伴走型コーチング</div>
       <div class="work-card-body">
-        20〜30代のキャリア・人生に悩む人を対象に、3ヶ月間の伴走セッション。やりたくないことを徹底的に減らし、内側にある声に従って一歩を踏み出せる状態に導く。体験セッション、無料。
+        20〜30代のキャリア・人生に悩む人を対象に、3ヶ月間の伴走セッション。やりたくないことを徹底的に減らし、内側にある声に従って一歩を踏み出せる状態に導く。無料の体験セッション、受付中。
       </div>
+      <a class="work-card-link" href="https://yoshikazumotoki.github.io/yameru/" target="_blank">体験する ↗</a>
       <div class="work-tag">Coaching</div>
     </div>
 
-    <div class="work-card reveal" onclick="window.open('https://peatix.com/event/4975967','_blank')" style="cursor:pointer;">
+    <div class="work-card reveal">
       <div class="work-card-icon">II.</div>
-      <div class="work-card-title"><a href="https://peatix.com/event/4975967" target="_blank" style="color:inherit;text-decoration:none;">TOKYO OFFLINE CLUB</a></div>
+      <div class="work-card-title">TOKYO OFFLINE CLUB</div>
       <div class="work-card-body">
-        毎週日曜13:00〜15:00、代々木公園。スマホを専用のスマホ預かりボックスに預け、2時間をアナログに過ごす場。定員12名、参加費¥1,000。「東京の新しい文化にしたい」というビジョンで運営中。
+        毎週日曜日の13:00〜15:00、代々木公園でスマホを2時間預けて、アナログに過ごす場を提供している。東京の新しい文化にすることをビジョンに運営中。
       </div>
+      <a class="work-card-link" href="https://peatix.com/event/4975967" target="_blank">参加する ↗</a>
       <div class="work-tag">Community</div>
     </div>
 
-    <div class="work-card reveal" onclick="window.open('https://note.com/motokiyoshikazu','_blank')" style="cursor:pointer;">
+    <div class="work-card reveal">
       <div class="work-card-icon">III.</div>
-      <div class="work-card-title"><a href="https://note.com/motokiyoshikazu" target="_blank" style="color:inherit;text-decoration:none;">note「元木良和」</a></div>
+      <div class="work-card-title">note「元木良和」</div>
       <div class="work-card-body">
-        「現代社会で人間らしく生きること」をテーマに執筆。ミニマリズム、仏教、TOKYO OFFLINE CLUB、インド旅行記、自己破産の経験など。実体験を全部さらけ出して書いている。
+        「現代社会で人間らしく生きる方法」をテーマに週1で記事を創作。仏教、ミニマリズム、TOKYO OFFLINE CLUBの活動、インド旅行記、自己破産の体験など、実体験をさらけ出して書いている。
       </div>
+      <a class="work-card-link" href="https://note.com/motokiyoshikazu" target="_blank">読む ↗</a>
       <div class="work-tag">Writing</div>
     </div>
 
@@ -616,7 +654,7 @@
       <div class="work-card-icon">IV.</div>
       <div class="work-card-title">書籍</div>
       <div class="work-card-body">
-        自己理解・ミニマリズム・仏教的生き方など、noteでは書ききれない深度で届ける電子書籍・書籍を準備中。
+        自己理解・ミニマリズム・仏教的生き方など、noteでは書ききれない深度で届ける書籍を制作中。
       </div>
       <div class="work-tag">Book</div>
     </div>
